@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+	<div>
+			<form style="border-bottom: 1px #ccc solid ">
+			
+			<div class="main">
+			
+					<p>Đăng Kí Tài Khoản User</p>
+					<label for="userName">User name:</label><br/>
+					<input type="text" name="userName" id="userName" /><br/>
+					<label for="fullName">Full name:</label><br/><input type="text" name="fullName" id="fullName" /><br/><label for="email">Email:</label><br/>
+					<input type="text" name="email" id="email" /><br/>
+					<label for="birthday">Birthday:</label><br/>
+					<input type="date" name="birthday" id="birthday" /><br/>
+					<button class="button-gr" type="button" onclick="add(event)">Save</button>
+					<button class="button-or" type="button" id="reset-button" onclick="clear(event)">Reset</button>
+			</div>
+			</form>
+	</div>
+			<br/>
+			<form>
+			<table border="1" cellspacing="0" cellpadding="5" id="render">
+				<tr style="background-color:#178e4c ;">
+				<td>No</td>
+				<td>User name</td>
+				<td>Full name</td>
+				<td>Email</td>
+				<td>Birthday</td>
+				<td>Edit</td>
+				<td>Delete</td>
+				</tr>
+			</table>
+			</form>
+
+	</div>
+    <script src="./js.js"></script>
+  </body>
+</html>
